@@ -1,6 +1,4 @@
-# Shoe Inventory
-
-![Shoe Inventory](https://i2.sdlcdn.com/img/web_csf_top_navigation09/CSF_Mens_Footwear_Top_Navigation_Formale2.jpg)
+# Hotel Booking
 
 ## Documentation
 
