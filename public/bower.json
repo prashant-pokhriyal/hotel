@@ -1,0 +1,28 @@
+{
+  "name": "hotel",
+  "homepage": "https://github.com/prashant-pokhriyal/shoe",
+  "authors": [
+    "Prashant Pokhriyal <pokhariyalp@gmail.com>"
+  ],
+  "description": "hotel booking",
+  "main": "index.html",
+  "keywords": [
+    "hotel",
+    "booking"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^5.0.6",
+    "angular-toastr": "^2.1.1",
+    "angular-animate": "^1.7.0"
+  }
+}

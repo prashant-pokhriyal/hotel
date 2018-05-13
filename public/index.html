@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/bower_components/components-font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/bower_components/angular-timeline/dist/angular-timeline.css"/>
+  <link rel="stylesheet" href="assets/bower_components/angular-datatables/dist/css/angular-datatables.min.css">
+  <link rel="stylesheet" href="assets/bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower_components/angular-toastr/dist/angular-toastr.min.css" />
+
+  <title>Shoe Inventory</title>
+</head>
+
+<body ng-controller="AppCtrl as hotel">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center text-primary"><h1>Welcome To Hotel Booking</h1></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-4 col-sm-4">
+        <form class="form-inline" ng-submit="create()">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><i class="fas fa-users"></i> Choose number of people</div>
+            <div class="panel-body">
+              <div ng-repeat="field in hotel.booking.fields">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <i class="text-primary fas" ng-class="field.class"></i>
+                    <span class="text-capitalize">{{field.name}}</span>
+                    <span class="pull-right">
+                      <i type="button" data-toggle="tooltip"
+                        class="fas fa-minus-circle text-danger"
+                        id="{{ 'hotel-remove-' + field.name }}"
+                        ng-click="hotel.remove($index)"></i>
+                      <span class="">{{field.value}}</span>
+                      <i type="button" data-toggle="tooltip"
+                        id="{{ 'hotel-add-' + field.name }}"
+                        class="fas fa-plus-circle text-success hotel-add"
+                        ng-click="hotel.add($index)"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr/>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-primary">Book</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/bower_components/angular/angular.min.js"></script>
+
+  <script src="components/choose_people/choose_people.module.js"></script>
+  <script src="components/choose_people/choose_people.service.js"></script>
+  <script src="components/choose_people/choose_people.ctrl.js"></script>
+</body>
+
+</html>
