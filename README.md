@@ -17,10 +17,7 @@ You can download [bower](https://bower.io/) in your system. And after installing
 ```
 bower install
 ```
-To execute the program, run following command.
-```
-run index.html
-```
+To execute the program, open `public/index.html` file.
 
 ## Built With
 
