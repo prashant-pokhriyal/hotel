@@ -1,6 +1,6 @@
 {
   "name": "hotel",
-  "homepage": "https://github.com/prashant-pokhriyal/shoe",
+  "homepage": "https://github.com/prashant-pokhriyal/hotel",
   "authors": [
     "Prashant Pokhriyal <pokhariyalp@gmail.com>"
   ],
@@ -22,7 +22,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "components-font-awesome": "^5.0.6",
-    "angular-toastr": "^2.1.1",
-    "angular-animate": "^1.7.0"
+    "angular": "^1.7.0",
+    "jquery": "^3.3.1"
   }
 }
