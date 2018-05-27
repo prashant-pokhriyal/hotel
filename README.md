@@ -19,6 +19,8 @@ bower install
 ```
 To execute the program, open `public/index.html` file.
 
+See live [demo](https://prashant-pokhriyal.github.io/hotel/public)
+
 ## Built With
 
 * [AngularJS](https://angularjs.org/)
